@@ -24,6 +24,10 @@ namespace Solution
             {
               return equip;
             }
+            else if(selectedItems[0]is IConsumable)
+            {
+                return  consume;
+            }
            return none;
         }
 
@@ -41,7 +45,13 @@ namespace Solution
 
         public List<Item> GetConsumables()
         {
-            return inventory;
+            List<Item>items=new();
+            foreach(Item item in inventory)
+            if(item is IConsumable)
+            items.Add(item);
+            return items;
+
+           // return inventory;
         }
 
         public List<Item> GetAllItems()

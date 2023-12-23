@@ -54,12 +54,12 @@
 
         public void Equip()
         {
-           Equipped=false;
+           Equipped=true;
         }
 
         public void Unequip()
         {
-           Equipped=true;
+           Equipped=false;
         }
         protected override int InternalSortOrder { get { return 2; } }
     }
