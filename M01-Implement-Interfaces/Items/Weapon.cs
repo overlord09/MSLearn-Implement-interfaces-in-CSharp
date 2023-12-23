@@ -61,5 +61,6 @@
         {
            Equipped=true;
         }
+        protected override int InternalSortOrder { get { return 2; } }
     }
 }

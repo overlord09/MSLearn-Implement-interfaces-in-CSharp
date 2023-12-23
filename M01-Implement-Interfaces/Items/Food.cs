@@ -21,5 +21,7 @@
             
             return name.Replace("_", " ").Trim();
         }
+          protected override int InternalSortOrder { get { return 3; } }
     }
+  
 }

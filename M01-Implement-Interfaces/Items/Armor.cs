@@ -53,5 +53,6 @@ internal class Armor : Item, IEquipable
             weight += random.Next(1, 10);
             defense += random.Next(1, 10);
         }
+        protected override int InternalSortOrder { get { return 1; } }
     }
 }

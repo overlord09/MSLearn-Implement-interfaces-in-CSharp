@@ -46,8 +46,9 @@ namespace Solution
 
         public List<Item> GetAllItems()
         {
-            
-            return inventory;
+             inventory.Sort();
+    return inventory;
+           
         }
 
         public void SetSelectedItems(List<Item> selectedItems)

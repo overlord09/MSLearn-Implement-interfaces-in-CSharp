@@ -49,5 +49,6 @@
             }
             return name + append;
         }
+        protected override int InternalSortOrder { get { return 4; } }
     }
 }
