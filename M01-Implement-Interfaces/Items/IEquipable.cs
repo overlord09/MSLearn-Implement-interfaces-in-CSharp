@@ -4,7 +4,7 @@ namespace M01_Implement_Interfaces.Items
     {
         public void Equip();
         public void Unequip();
+        public bool Equipped{get; set;}
     }
   
 }
-public bool Equipped{get; set;}
